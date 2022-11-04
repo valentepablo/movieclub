@@ -2,7 +2,8 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import BottomNav from './components/BottomNav';
-import MainContainer from './components/MainContainer';
+import HomePage from './components/HomePage';
+import SeriesPage from './components/SeriesPage';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <div className='text-slate-400'>
         <Header />
         <Routes>
-          <Route path='/' element={<MainContainer />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='series' element={<SeriesPage />} />
         </Routes>
         <BottomNav />
       </div>
