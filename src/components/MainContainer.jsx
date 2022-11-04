@@ -15,13 +15,13 @@ const MainContainer = () => {
   }, []);
 
   return (
-    <main className='bg-dark-blue min-h-screen py-[60px]'>
+    <main className='bg-dark-blue min-h-screen py-[60px] bg-main-background bg-cover bg-no-repeat'>
       <div className='px-2 py-2'>
         <p className='mb-1 font-semibold text-sm'>Peliculas populares</p>
         <div className='flex items-center gap-2 scroll-x-hidden'>
           {popularMovies.map((movie) => {
             return (
-              <div key={movie.id} className='shrink-0 w-[108px] bg-red-500'>
+              <div key={movie.id} className='shrink-0 w-[108px]'>
                 <img
                   src={`${IMG_BASE_URL}${movie.poster_path}`}
                   alt={movie.original_title}
@@ -38,7 +38,7 @@ const MainContainer = () => {
         <div className='flex items-center gap-2 scroll-x-hidden'>
           {popularMovies.map((movie) => {
             return (
-              <div key={movie.id} className='shrink-0 w-[108px] bg-red-500'>
+              <div key={movie.id} className='shrink-0 w-[108px]'>
                 <img
                   src={`${IMG_BASE_URL}${movie.poster_path}`}
                   alt={movie.original_title}
@@ -55,7 +55,7 @@ const MainContainer = () => {
         <div className='flex items-center gap-2 scroll-x-hidden'>
           {popularMovies.map((movie) => {
             return (
-              <div key={movie.id} className='shrink-0 w-[108px] bg-red-500'>
+              <div key={movie.id} className='shrink-0 w-[108px]'>
                 <img
                   src={`${IMG_BASE_URL}${movie.poster_path}`}
                   alt={movie.original_title}
@@ -72,7 +72,24 @@ const MainContainer = () => {
         <div className='flex items-center gap-2 scroll-x-hidden'>
           {popularMovies.map((movie) => {
             return (
-              <div key={movie.id} className='shrink-0 w-[108px] bg-red-500'>
+              <div key={movie.id} className='shrink-0 w-[108px]'>
+                <img
+                  src={`${IMG_BASE_URL}${movie.poster_path}`}
+                  alt={movie.original_title}
+                  className='max-w-full'
+                />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className='px-2 py-2'>
+        <p className='mb-1 font-semibold text-sm'>Peliculas populares</p>
+        <div className='flex items-center gap-2 scroll-x-hidden'>
+          {popularMovies.map((movie) => {
+            return (
+              <div key={movie.id} className='shrink-0 w-[108px]'>
                 <img
                   src={`${IMG_BASE_URL}${movie.poster_path}`}
                   alt={movie.original_title}
