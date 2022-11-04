@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-x-hidden {
+  scrollbar-width: none; /* for FireFox */
+  overflow-x: scroll;
+}
+
+.scroll-x-hidden::-webkit-scrollbar {
+  display: none; /* for Chrome and Safari */
+}
