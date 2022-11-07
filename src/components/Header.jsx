@@ -1,17 +1,23 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className='fixed bg-dark-blue shadow-md top-0 inset-x-0'>
+    <header className='fixed bg-darker shadow-md top-0 inset-x-0'>
       <ul className='flex items-center justify-center gap-12 text-sm py-5'>
-        <li className='text-slate-200'>
-          <Link to='/'>Inicio</Link>
+        <li>
+          <NavLink to='/' className={({ isActive }) => (isActive ? 'text-slate-200' : '')}>
+            Inicio
+          </NavLink>
         </li>
         <li>
-          <Link to='/series'>Series</Link>
+          <NavLink to='/series' className={({ isActive }) => (isActive ? 'text-slate-200' : '')}>
+            Series
+          </NavLink>
         </li>
         <li>
-          <Link to='/peliculas'>Peliculas</Link>
+          <NavLink to='/peliculas' className={({ isActive }) => (isActive ? 'text-slate-200' : '')}>
+            Peliculas
+          </NavLink>
         </li>
       </ul>
     </header>

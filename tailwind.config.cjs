@@ -4,11 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'dark-blue': 'rgb(15 23 30)',
-        dark: 'rgb(8 8 8)',
-      },
-      backgroundImage: {
-        'main-background': "url('/src/assets/background.svg')",
+        darker: 'rgb(17 17 17)',
       },
     },
   },
