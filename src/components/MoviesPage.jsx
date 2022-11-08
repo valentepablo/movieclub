@@ -1,20 +1,20 @@
 import Main from './Main';
 import PopularMovies from './fetchComponents/movies/PopularMovies';
 import TrendingMovies from './fetchComponents/movies/TrendingMovies';
-import PopularSeries from './fetchComponents/series/PopularSeries';
-import TrendingSeries from './fetchComponents/series/TrendingSeries';
+import NowPlayingMovies from './fetchComponents/movies/NowPlayingMovies';
+import TopRatedMovies from './fetchComponents/movies/TopRatedMovies';
 
-const HomePage = () => {
+const MoviesPage = () => {
   return (
     <Main>
       <div className='space-y-6'>
         <PopularMovies />
         <TrendingMovies />
-        <PopularSeries />
-        <TrendingSeries />
+        <NowPlayingMovies />
+        <TopRatedMovies />
       </div>
     </Main>
   );
 };
 
-export default HomePage;
+export default MoviesPage;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { API_BASE_URL, API_KEY } from '../../services/api';
-import ScrollableSection from '../ScrollableSection';
+import { API_BASE_URL, API_KEY } from '../../../services/api';
+import ScrollableSection from '../../ScrollableSection';
 
 const TopRatedMovies = () => {
   const [topRated, setTopRated] = useState([]);

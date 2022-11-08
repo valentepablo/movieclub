@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { API_BASE_URL, API_KEY, IMG_BASE_URL } from '../../services/api';
-import ScrollableSection from '../ScrollableSection';
+import { API_BASE_URL, API_KEY } from '../../../services/api';
+import ScrollableSection from '../../ScrollableSection';
 
 const PopularMovies = () => {
   const [popularMovies, setPopularMovies] = useState([]);
